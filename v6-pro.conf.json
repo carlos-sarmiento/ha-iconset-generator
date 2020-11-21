@@ -1,0 +1,30 @@
+{
+    "outputPath": "js/v6-pro",
+    "iconsets": [
+        {
+            "directory": "icons/v6-pro/brands",
+            "name": "fab"
+        },
+        {
+            "directory": "icons/v6-pro/duotone",
+            "name": "fad",
+            "multipath": true
+        },
+        {
+            "directory": "icons/v6-pro/light",
+            "name": "fal"
+        },
+        {
+            "directory": "icons/v6-pro/regular",
+            "name": "far"
+        },
+        {
+            "directory": "icons/v6-pro/solid",
+            "name": "fas"
+        },
+        {
+            "directory": "icons/v6-pro/thin",
+            "name": "fat"
+        }
+    ]
+}

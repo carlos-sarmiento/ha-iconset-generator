@@ -1,0 +1,26 @@
+{
+    "outputPath": "js/v5-pro",
+    "iconsets": [
+        {
+            "directory": "icons/v5-pro/brands",
+            "name": "fab"
+        },
+        {
+            "directory": "icons/v5-pro/duotone",
+            "name": "fad",
+            "multipath": true
+        },
+        {
+            "directory": "icons/v5-pro/light",
+            "name": "fal"
+        },
+        {
+            "directory": "icons/v5-pro/regular",
+            "name": "far"
+        },
+        {
+            "directory": "icons/v5-pro/solid",
+            "name": "fas"
+        }
+    ]
+}

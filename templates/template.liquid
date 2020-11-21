@@ -1,0 +1,17 @@
+const icons_{{name}} = {
+    {% for icon in icons %}"{{icon.name}}": { "viewBox": "{{icon.ViewBox}}" , "path": "{{icon.paths[0].path}}", },
+    {% endfor %}   
+};
+
+async function getIcon_{{name}}(name) {
+    const icon = icons_{{name}}[name];
+
+    if (icon == null) {
+        return null;
+    }
+
+    return icon;
+}
+
+window.customIconsets = window.customIconsets || {};
+window.customIconsets["{{name}}"] = getIcon_{{name}};

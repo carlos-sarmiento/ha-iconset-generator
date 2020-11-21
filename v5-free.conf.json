@@ -1,0 +1,17 @@
+{
+    "outputPath": "js/v5-free",
+    "iconsets": [
+        {
+            "directory": "icons/v5-free/brands",
+            "name": "fab"
+        },
+        {
+            "directory": "icons/v5-free/regular",
+            "name": "far"
+        },
+        {
+            "directory": "icons/v5-free/solid",
+            "name": "fas"
+        }
+    ]
+}
