@@ -1,0 +1,9 @@
+{
+    "outputPath": "js/simpleicons",
+    "iconsets": [
+        {
+            "directory": "icons/simpleicons",
+            "name": "si"
+        }
+    ]
+}
