@@ -37,3 +37,6 @@ icons/*
 js/*
 !js/v5-free
 !js/v5-free/*
+
+!js/simpleicons
+!js/simpleicons/*
