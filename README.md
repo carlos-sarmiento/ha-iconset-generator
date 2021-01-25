@@ -30,7 +30,7 @@ To process other svg iconsets, a custom config file can be used:
         {
             "directory": "icons/v5-pro/brands", // The path in which the .svg files can be found
             "name": "fab" // The name of the generated iconset. Used both for the js file and the ha prefix
-        },
+        }
     ]
 }
 ```
