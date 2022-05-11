@@ -1,6 +1,6 @@
 const icons_{{name}} = {
-    {% for icon in icons %}"{{icon.name}}": { "viewBox": "{{icon.ViewBox}}" , "path": "{{icon.paths[0].path}}", },
-    {% endfor %}   
+    {% for icon in icons %}"{{icon.name}}": { "viewBox": "{{icon.ViewBox}}", "keywords": ["{{icon.name}}"], "path": "{{icon.paths[0].path}}" },
+    {% endfor %}
 };
 
 async function getIcon_{{name}}(name) {
@@ -13,5 +13,21 @@ async function getIcon_{{name}}(name) {
     return icon;
 }
 
+async function getIconList_{{name}}() {
+  return Object.entries(icons_{{name}}).map(([icon, content]) => ({
+    name: icon,
+    keywords: content.keywords,
+  }));
+}
+
+window.customIcons = window.customIcons || {};
+window.customIcons["{{name}}"] = { getIcon: getIcon_{{name}}, getIconList: getIconList_{{name}} };
+
 window.customIconsets = window.customIconsets || {};
 window.customIconsets["{{name}}"] = getIcon_{{name}};
+
+console.info(
+    `%c {{name}} %c`,
+    "color: orange; font-weight: bold; background: black",
+    "color: white; font-weight: bold; background: dimgray"
+);
