@@ -23,6 +23,10 @@
             "name": "fas"
         },
         {
+            "directory": "icons/v6-pro/sharp-solid",
+            "name": "fasl"
+        },
+        {
             "directory": "icons/v6-pro/thin",
             "name": "fat"
         }
